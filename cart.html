@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="brand">Shopping Cart</a>
+        <nav>
+  <ul id="links">
+    <li><a href="login.html">Sign in</a></li>
+    <li><a href="register.html">Sign up</a></li>
+  </ul>
+
+  <ul id="user_info" style="display:none">
+    <li><a href="#" id="user"></a></li>
+
+    <li class="cart-wrapper">
+      <a href="cart.html" class="shopping_cart">
+        Cart (<span class="cart-count">0</span>)
+      </a>
+      <div class="carts-products" style ="display:none">
+        <div id="cart-dropdown"></div>
+      </div>
+    </li>
+
+    <li><a href="#" id="logout">Logout</a></li>
+  </ul>
+</nav>
+
+
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding:32px 0 60px;">
+  <h2 id="hello" class="center" style="margin-bottom:8px;"></h2>
+  <h1 class="center">Your Cart</h1>
+
+  <p id="cart-empty" class="center" style="margin-top:10px;color:var(--muted);display:none">
+    Your cart is empty.
+  </p>
+
+  <div id="cart-list" class="cart-list"></div>
+
+  <div class="center" style="margin-top:20px;font-weight:800">
+    Total Price: <span id="cart-grand">$0.00</span>
+  </div>
+
+  <div class="center" style="margin-top:14px;">
+    <a class="btn" href="index.html">View All Products</a>
+  </div>
+
+
+
+
+
+<section class="favorites">
+  <h2>Your Favorite Items</h2>
+  <p id="fav-empty" class="center">No favorite items yet.</p>
+  <div id="favorites-list"></div>
+</section>
+</main>
+
+
+  <footer>
+    <div class="container">&copy; <span id="year"></span> Shopping Cart · Built with ♥</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/user.js"></script>
+  <script src="js/carts.js"></script>
+  <script src="js/script.js"></script>
+
+  
+
+</body>
+</html>

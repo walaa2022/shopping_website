@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart || Home Page</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+   
+</head>
+<body>
+
+    <header>
+         <div class="container">
+
+             <div class="header-content">
+                <a href="index.html" class="brand">Shopping website</a>
+
+              <nav>
+  <ul id="links">
+    <li><a href="login.html">Sign in</a></li>
+    <li><a href="register.html">Sign up</a></li>
+  </ul>
+
+  <ul id="user_info">
+    <li><a href="#" id="user"></a></li>
+
+    <li class="cart_wrapper">
+      <a href="#" id="cart-toggle" class="shopping_cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+      </a>
+
+      <div class="carts_products" id="cart-dropdown">
+      </div> </li>
+
+    <li><a href="#" id="logout">Logout</a></li>
+  </ul>
+</nav>
+
+             </div>
+              
+         </div>
+         
+    <section class="search-bar container">
+  <select id="search-type" class="search-select">
+    <option value="product">Search by Product</option>
+    <option value="category">Search by Category</option>
+  </select>
+
+  <input id="search-input" type="text" class="search-input" placeholder="Enter search term...">
+  <button id="search-btn" class="btn">Search</button>
+</section>
+
+</header>
+    
+
+    <main>
+    <section class="hero">
+      <div class="container">
+        <span class="badge">Modern Tech . Everyday Gear</span>
+        <h1>Less scrolling. Better stuff.</h1>
+        <p>Thoughtful picks across audio, wearable, home, and work-priced to move.</p>
+      </div>
+    </section>
+
+    <section class="products-section">
+      <div class="container">
+        <div class="products-grid">
+                    <!-- 1: Wireless Headphones -->
+          <article class="card" data-sku="AUD-WH100" data-price="79.99" data-category="Audio">
+            <div class="card-media">
+              <img src="images/headphones.webp" alt="Wireless Headphones" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Wireless Headphones</h3>
+              <p class="card-desc">Bluetooth 5.3 · 30h battery · comfy earcups.</p>
+              <p class="card-category">Category: <span>Audio</span></p>
+              <div class="card-row">
+                <span class="price">$79.99</span>
+                <button class="btn" type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2: Smart Watch -->
+          <article class="card" data-sku="WRB-SW200" data-price="129.00" data-category="Wearables">
+            <div class="card-media">
+              <img src="images/smartwatch.webp" alt="Smart Watch"/>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Smart Watch</h3>
+              <p class="card-desc">Heart-rate · GPS · 5ATM · calls & texts.</p>
+              <p class="card-category">Category: <span>Wearables</span></p>
+              <div class="card-row">
+                <span class="price">$129.00</span>
+                <button class="btn" type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3: Everyday Backpack -->
+          <article class="card" data-sku="BAG-BP310" data-price="49.50" data-category="Workspace">
+            <div class="card-media">
+              <img src="images/backpack.jpg" alt="Everyday Backpack"/>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Everyday Backpack</h3>
+              <p class="card-desc">18L · padded laptop sleeve · water-resistant.</p>
+              <p class="card-category">Category: <span>Workspace</span></p>
+              <div class="card-row">
+                <span class="price">$49.50</span>
+                <button class="btn" type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4: Lightweight Sneakers -->
+          <article class="card" data-sku="FTW-SN901" data-price="89.00" data-category="Wearables">
+            <div class="card-media">
+              <img src="images/sneakers.jpg" alt="Lightweight Sneakers"/>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Lightweight Sneakers</h3>
+              <p class="card-desc">Breathable knit · cushioned sole · unisex.</p>
+              <p class="card-category">Category: <span>Wearables</span></p>
+              <div class="card-row">
+                <span class="price">$89.00</span>
+                <button class="btn" type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5: Mechanical Keyboard -->
+          <article class="card" data-sku="WRK-KB550" data-price="59.00" data-category="Workspace">
+            <div class="card-media">
+              <img src="images/keyboard.png" alt="Mechanical Keyboard"/>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Mechanical Keyboard</h3>
+              <p class="card-desc">Hot-swappable switches · RGB · USB-C.</p>
+              <p class="card-category">Category: <span>Workspace</span></p>
+              <div class="card-row">
+                <span class="price">$59.00</span>
+                <button class="btn" type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6: Ergonomic Mouse -->
+          <article class="card" data-sku="WRK-MS410" data-price="24.99" data-category="Workspace">
+            <div class="card-media">
+              <img src="images/mouse.jpeg" alt="Ergonomic Mouse"/>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Ergonomic Mouse</h3>
+              <p class="card-desc">Silent clicks · sculpted grip · 2.4GHz.</p>
+              <p class="card-category">Category: <span>Workspace</span></p>
+              <div class="card-row">
+                <span class="price">$24.99</span>
+                <button class="btn" type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7: Portable Speaker -->
+          <article class="card" data-sku="AUD-SP310" data-price="39.00" data-category="Audio">
+            <div class="card-media">
+              <img src="images/speaker.jpeg" alt="Portable Speaker"/>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Portable Speaker</h3>
+              <p class="card-desc">IPX5 splashproof · 12h playtime.</p>
+              <p class="card-category">Category: <span>Audio</span></p>
+              <div class="card-row">
+                <span class="price">$39.00</span>
+                <button class="btn" type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8: Smart laptop -->
+          <article class="card" data-sku="HOME-BL220" data-price="769.00" data-category="Workspace">
+            <div class="card-media">
+              <img src="images/laptop.jpeg" alt="Smart laptop"/>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Smart Laptop</h3>
+              <p class="card-desc">Auto-programs · AI enabled · compact.</p>
+              <p class="card-category">Category: <span>Workspace</span></p>
+              <div class="card-row">
+                <span class="price">$769.00</span>
+                <button class="btn" type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- 8: Smart glasses -->
+          <article class="card" data-sku="HOME-BL220" data-price="769.00" data-category="Workspace">
+            <div class="card-media">
+              <img src="images/glasses.jpg" alt="Smart glasses"/>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Smart glasses</h3>
+              <p class="card-desc">Auto-programs · AI enabled · compact.</p>
+              <p class="card-category">Category: <span>Workspace</span></p>
+              <div class="card-row">
+                <span class="price">$769.00</span>
+                <button class="btn" type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">&copy; <span id="year"></span> Shopping Cart · Built with ♥</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+    
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/user.js"></script>
+<script src="js/script.js"></script>
+
+
+
+</body>
+</html>
